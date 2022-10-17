@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLA Phones Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+        <script src="script.js" defer></script>
+</head>
+
+<body class="m-4">
+
+    <div class="postition-sticky" style="height: 100px; z-index: 1000;">
+
+        <div class="bg-primary
+    h-100
+    d-flex
+    justify-content-center
+    align-items-center
+    fs-1
+    fw-bold
+    text-white
+    ">
+            Welcome to CLA Shop!
+        </div>
+    </div>
+    <h1 class="text-center my-3">List of products</h1>
+    <div class="container">
+        <div id="items" class="row">
+        
+  <img src="" alt="" >
+        </div>
+    </div>
+
+    <hr />
+    <div>
+        <h1 class="text-center">Add a product</h1>
+        <div>
+            <label for="input1" class="form-label">Title</label>
+            <input type="text" id="input1" placeholder="product's title" class="form-control" />
+        </div>
+        <div>
+            <label for="input4" class="form-label">Price</label>
+            <input type="text" id="input4" placeholder="product's price" class="form-control" />
+        </div>
+        <div>
+            <label for="input2" class="form-label">Description</label>
+            <textarea type="text" id="input2" class="form-control" row="3"></textarea>
+        </div>
+
+        <div class="d-flex justify-content-center mt-3">
+            <button type="submit" data-bs-toggle="modal" data-bs-target="#input3" class="btn btn-primary">
+                Add a product
+            </button>
+        </div>
+    </div>
+
+    <div class="modal fade" id="input3" tabindex="-1" aria-labelledby="input3Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="input3Label">Add your product to our shop!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Please enter your E-mail so you can follow the identity confirmation procedure</h6>
+                    <div>
+                        <label for="input4" class="form-label">Email</label>
+                        <input type="text" id="input4" placeholder="Enter your email please" class="form-control" />
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                    <button type="button" class="btn btn-success" id="addItem">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+</html>
